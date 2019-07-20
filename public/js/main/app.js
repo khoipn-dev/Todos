@@ -22,6 +22,7 @@ app.controller('todoController', ['$scope', 'todo-service', function ($scope, To
             $scope.todos = data;
             $scope.formData = "";
             $scope.loading = false;
+            toastr.success('Create successfully !!!');
         });
     };
     $scope.updateTodo = function (todo) {
@@ -30,6 +31,7 @@ app.controller('todoController', ['$scope', 'todo-service', function ($scope, To
         TodoService.update(todo).success(function (data) {
             $scope.todos = data;
             $scope.loading = false;
+            toastr.success('Update successfully !!!');
         });
         
     };
@@ -39,6 +41,7 @@ app.controller('todoController', ['$scope', 'todo-service', function ($scope, To
         TodoService.delete(todo._id).success(function (data) {
             $scope.todos = data;
             $scope.loading = false;
+            toastr.success('Delete successfully !!!');
         });
     }
 }]);
