@@ -1,4 +1,7 @@
-{   "db_name": "todos",
-    "username": "root",
-    "password": "123456"
+{   
+    "host": "ds353457.mlab.com",
+    "port": "53457",
+    "db_name": "heroku_55wmll1d",
+    "username": "admin",
+    "password": "ad12345"
 }
