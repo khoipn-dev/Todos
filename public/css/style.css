@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    margin-top: 30px;
+}
+#todo-list {
+    margin-bottom: 30px;
+}
+
+#todo-form {
+    margin-bottom: 50px;
+}
+.strike {
+    text-decoration: line-through;
+}
+.preloading {
+    overflow: hidden;
+}
