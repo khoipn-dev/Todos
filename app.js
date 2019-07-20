@@ -21,6 +21,15 @@ mongoose.connect(config.getDBConnectionString());
 setupController(app);
 todoController(app);
 
+/**
+ * NOT SLEEP HEROKU
+ */
+
+var http = require("http");
+setInterval(function() {
+    http.get("http://todos4u.herokuapp.com");
+}, 300000);
+
 app.get('/', function (req, res) {
     res.render('index');
  });
